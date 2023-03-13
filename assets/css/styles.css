@@ -1,0 +1,931 @@
+
+@media only screen and (max-width: 767px) {
+  .desktopview{
+    display: none;
+  }
+  #ul-desktop{
+    display: none;
+  }
+  .careplanimg{
+    max-width: 100%;
+  }
+  .floralimg{
+    max-width: 100%;
+  }
+  .gardendivimage{
+    max-width: 100%;
+  }
+}
+@media only screen and (min-width: 767px) {
+  .mobile-view{
+    display: none;
+  }
+  #ul-mobile{
+    display: none;
+  }
+
+
+}
+/* chat bot start */
+
+.botcontainer {
+
+	display: flex;
+  justify-content: center;
+	align-items: center;
+  position:fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 10000;
+
+}
+.botcontainer img{
+  width: 100px;
+}
+.chat {
+	height: 200px;
+	width: 15vw;
+	display: flex;
+	flex-direction: column;
+  justify-content: center;
+	align-items: center;
+}
+
+::-webkit-input-placeholder {
+	color: .711
+}
+
+input {
+	border: 0;
+	padding: 6px;
+	margin-left: auto;
+	border-radius: 10px;
+}
+
+.messages {
+	display: flex;
+	flex-direction: column;
+	overflow: scroll;
+	height: 90%;
+	width: 100%;
+	background-color: whitesmoke;
+  background-image: url('../img/bot2.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+	padding: 15px;
+	margin: 15px;
+	border-radius: 10px;
+}
+
+#bot {
+	margin-right: auto;
+}
+
+#user {
+	margin-left: auto;
+}
+.filler{
+  width: 100%;
+  height: 100px;
+}
+.privacy-cont{
+  background-color: whitesmoke;
+  color: black;
+  width:100%;
+  height: auto;
+  text-align: center;
+
+}
+#lin{
+  text-align: left;
+}
+.privacy-subcont{
+  padding: 2%;
+  text-align: left;
+}
+.privacy-subcont p{
+  padding: 3%;
+  font-family: Lucinda Console;
+}
+.privacy-cont h1{
+    color:#42a145;
+  text-align: center;
+  font-family: Lucinda Console;
+}
+.privacy-cont h3{
+  color:#6C55F9 ;
+  text-align: center;
+  font-family: Lucinda Console;
+  list-style-type: disc;
+}
+.privacy-cont li{
+  color:black;
+  text-align: left;
+  padding: 1% 3% ;
+  width: 70%;
+  font-family: Lucinda Console;
+  list-style-type: circle;
+}
+
+.bot {
+	font-family: Consolas, 'Courier New', Menlo, source-code-pro, Monaco,
+	monospace;
+}
+
+.avatar {
+	height: 25px;
+}
+
+.response {
+	display: flex;
+	align-items: center;
+	margin: 1%;
+}
+
+
+/* Mobile */
+
+@media only screen and (max-width: 980px) {
+  .botcontainer {
+		flex-direction: column;
+		justify-content: flex-start;
+    position: fixed;
+    position:fixed;
+    right: 1em;
+    bottom: 2em;
+	}
+
+	.chat {
+		width: 75vw;
+
+	}
+}
+/* chat bot end */
+/* preloader start*/
+.fixed-top{
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+#preloader {
+  background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+}
+#loader {
+
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #9370DB;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+#loader:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #BA55D3;
+    -webkit-animation: spin 3s linear infinite;
+    animation: spin 3s linear infinite;
+}
+#loader:after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #FF00FF;
+    -webkit-animation: spin 1.5s linear infinite;
+    animation: spin 1.5s linear infinite;
+}
+@-webkit-keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+.alllinkson{
+  text-decoration: underline;
+  background-color: white;
+  border: none;
+
+}
+/* preloader end */
+.alltitlesonpage{
+  color:#42a145;
+  font-size: 30px;
+  font-weight: 600;
+
+}
+/* SOCIAL MEDIA LINKS START */
+.socialmedia{
+  position: fixed;
+  width: auto;
+  top:50%;
+  left: 3px;
+  display: block;
+  z-index: 1;
+
+}
+.socialmedia li{
+  list-style-type: none;
+}
+.socialmedia a{
+  font-size: 25px;
+  color: white;
+  padding: 10px;
+
+}
+.whatsapp{
+  background-color: #118f46;
+}
+.facebook{
+  background-color: #037bfc;
+}
+.ig{
+  background-color: #c73250;
+}
+
+/* SOCIAL MEDIA LINKS END */
+.alltittles p{
+  color:#42a145;
+  font-size: 30px;
+
+}
+
+/* drop down  page start*/
+.box {
+  background: #ebf4ff;
+  width: 100%;
+  height: auto;
+  margin: 30px auto;
+  transition: all .2s ease;
+  box-shadow: 5px 5px 5px gray;
+  border-radius: 0 5px 5px 5px;
+  display: none;
+  opacity: 0;
+}
+.box1 {
+  background: white;
+  width: 100%;
+  height: auto;
+  transition: all .2s ease;
+  display: none;
+  opacity: 0;
+}
+.show {
+  display: block;
+  opacity: 1;
+}
+.button{
+  border: none;
+  background-color: #446385;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/* drop down page end */
+/* link buttons start */
+
+.linkbuttons{
+
+  color: white;
+  background-color: #6C55F9;
+  padding: 5px;
+  border-radius: 5px;
+}
+.linkbuttons:hover{
+  text-decoration: none;
+  background-color: #446385;
+  color: white;
+}
+.linkbuttons22{
+  color: blue;
+text-decoration: underline;
+
+
+}
+.linkbuttons22:hover{
+  text-decoration: none;
+
+  color: blue;
+}
+/* link buttons end */
+
+/* parallax start */
+.parallax {
+  /* The image used */
+  background-image: url("../img/greenearth2.jpg");
+
+  /* Set a specific height */
+  min-height: 200px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+.parallax p{
+  color: whitesmoke;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0,0.5);
+align-self: center;
+padding: 20px;
+font-size: 30px;
+font-family: Lucinda Console;
+}
+/* parallax end */
+
+/* courasole start */
+.ta{
+  width: 100%;
+  height: auto;
+
+
+
+}
+.ta div{
+  display: flex;
+  text-align: center;
+  padding: 0 50px;
+}
+.ta p{
+  color: black;
+font-family: Rockwell;
+
+}
+
+/* courasole end */
+/* care plans start */
+.care-plans{
+  text-align: center;
+
+
+}
+#caretitle {
+  color: #42a145;
+  font-size: 30px;
+}
+.careplandivider{
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  padding: 20px;
+}
+
+.rearange{
+  display: block;
+}
+.rearange li{
+  padding:5px 20px;
+
+}
+.careplanimg{
+  max-width: 40%;
+}
+.careplanimg img{
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.careplandivider p{
+  padding: 0 0 0 20px;
+font-family: Lucinda Console;
+}
+.careplan2{
+  padding: 0 20px;
+  text-align: left;
+}
+.careplan2 p{
+  font-family: Lucinda Console;
+}
+
+
+/* care plans end */
+
+/* floral deliveries start */
+.floral-deliveries{
+
+width: 100%;
+height: auto;
+padding: 20px;
+  text-align: center;
+
+}
+
+.floraldiv{
+
+  display: flex;
+  justify-content: space-between;
+}
+.floralimg{
+  max-width: 40%;
+}
+.floralimg img{
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+
+}
+#floralpars{
+  padding: 0 20px;
+
+  text-align: left;
+}
+#floralpars p{
+  font-family: Lucinda Console;
+}
+/* floral deliveries end */
+/* graveside gardens start */
+.graveside-gardens{
+
+  text-align: center;
+  padding: 20px;
+}
+.gardentitle{
+  color: #42a145;
+  font-size: 30px;
+}
+.gardendiv{
+  display: flex;
+  justify-content: space-between;
+}
+
+.gardendivimage{
+  max-width: 40%;
+}
+.gardendivimage img{
+border-radius: 5px;
+  width: 100%;
+  height: auto;
+}
+.gardenpars{
+  padding: 0 0 0 20px;
+  text-align: left;
+
+}
+.gardenpars p{
+  font-family: Lucinda Console;
+}
+
+/* graveside gardens end */
+/* Headstone-cleaning start */
+.Headstone-cleaning{
+ padding: 20px;
+  text-align: center;
+
+  height: auto;
+}
+.headstonetitle{
+  color: #42a145;
+  font-size: 30px;
+
+}
+
+.headstonepars{
+
+  padding: 0 80px;
+  text-align: left;
+
+}
+.headstonepars p{
+font-family: Lucinda Console;
+  justify-content: flex-start;
+}
+.headstoneimages{
+
+  display: flex;
+  justify-content: space-around;
+}
+.headstoneimages div{
+  width:50%;
+  padding: 20px;
+
+}
+.headstoneimages img{
+border-radius: 5px;
+  max-width:60%;
+  height: auto;
+}
+/* Headstone-cleaning end */
+
+/* faqs start */
+
+.faqs{
+
+  text-align: center;
+  padding: 20px;
+
+}
+.faqstitle{
+  color:#42a145;
+  font-size: 30px;
+}
+.faqstarter{
+  text-align: left;
+  width: 100%;
+  height: auto;
+
+
+}
+.faqstarter p,li{
+  font-family: Lucinda Console;
+}
+
+
+.faqsdivider{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+
+}
+.faqsdivider div{
+  width: 50%;
+}
+.faqsdividerdiv p{
+  font-family: Lucinda Console;
+
+}
+.faqsdivimage img{
+  width: 100%;
+  height: auto;
+border-radius: 5px;
+
+}
+
+
+.faqsdividerdiv{
+  text-align: left;
+  padding: 0 0 0 30px;
+}
+
+.lastfaq{
+  width: 100%;
+  height: auto;
+  text-align: left;
+
+}
+.lastfaq p{
+font-family: Lucinda Console;
+
+}
+/* faqs end */
+
+/* terms section start */
+.Terms{
+
+
+  padding: 20px;
+  height: auto;
+
+  text-align: center;
+}
+.termstitle{
+  font-size: 30px;
+  color:#42a145;
+}
+.termspars{
+  text-align: left;
+
+}
+.termspars p{
+  font-family: Lucinda Console;
+}
+
+/* terms section end */
+
+
+
+
+
+/* about page styles */
+.desktopview{
+  text-align: center;
+}
+.about{
+  width: 100%;
+  height: auto;
+  text-align: left;
+  padding: 20px 0;
+}
+.abtimage{
+  width: 100%;
+  height: auto;
+}
+.abtimage img{
+  width: 100%;
+  height: auto;
+}
+.abouttitle{
+  color: green;
+  font-size: 30px;
+}
+.aboutpars{
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+}
+.aboutpars img{
+  width: 30%;
+  height: 30%;
+}
+.aboutpars p{
+
+  padding: 0 40px 0 0;
+
+}
+
+
+
+
+
+
+/* fun with flowers page styles */
+
+.funstart{
+  width: 100%;
+  height: 40vh;
+
+background-image: url("../img/funflower.jpg");
+background-size: 100%;
+background-repeat: no-repeat;
+background-position: cover;
+}
+.funstart img{
+  width: 100%;
+  height: 40vh;
+}
+.funpar{
+  width: 100%;
+  height: auto;
+  padding: 20px 0;
+}
+.funpar p{
+
+
+}
+/* workshop-and-parties start */
+.workshop-and-parties{
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding: 20px;
+}
+.workshoptitle{
+  color: green;
+  font-size: 30px;
+
+}
+.workdetail {
+  text-align: center;
+  display: block;
+
+}
+.workdetail p{
+font-family: Lucinda Console;
+
+}
+.workdetail li{
+
+}
+.workdetail div{
+  padding:0 20px 0 0;
+}
+.workdetail img{
+  width: 100%;
+  height: auto;
+}
+/* workshop-and-parties end */
+
+/* florals at home start mobile */
+.Florals-at-home{
+  text-align: center;
+  width: 100%;
+  height: auto;
+  padding: 30px;
+}
+.floralstitle{
+  color:green;
+  font-size: 30px;
+
+}
+.floralpars{
+
+  text-align: center;
+  display: block;
+
+}
+.floralpars div{
+  padding: 0 20px 0 0;
+}
+.floralpars div p{
+font-family: Lucinda Console;
+}
+.floralpars img{
+  width: 100%;
+
+}
+/* florals at home end */
+/* for kids start */
+.for-the-kids{
+  text-align: center;
+  width: 100%;
+  height: auto;
+
+}
+.forkidstitle{
+  color:green;
+  font-size: 30px;
+
+}
+.forkidspars{
+padding: 30px;
+  text-align: center;
+  display: block;
+
+}
+.forkidspars p{
+font-family: Lucinda Console;
+  padding: 0 20px 0 0;
+}
+.forkidspars img{
+  width: 100%;
+  height: auto;
+}
+/* for kids end */
+@media only screen and (max-width: 767px) {
+
+  .careplanimg{
+    max-width: 100%;
+  }
+  .floralimg{
+    max-width: 100%;
+  }
+  .gardendivimage{
+    max-width: 100%;
+  }
+}
+@media only screen and (min-width: 767px) {
+body{
+  padding: 0 90px;
+}
+.ta p{
+  font-size: 20px;
+
+}
+  /* workshop-and-parties start */
+
+  .workdetail {
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+
+  }
+  .wimg{
+    max-width: 40%;
+  }
+
+  .wimg img{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  /* workshop-and-parties end */
+  /* florals at home start mobile */
+  .Florals-at-home{
+
+    padding: 20px;
+  }
+
+  .floralpars{
+
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+
+  }
+.floimg{
+  max-width: 40%;
+
+}
+  .floimg img{
+    width: 100%;
+border-radius: 5px;
+  }
+  /* florals at home end */
+  /* for kids start */
+
+
+  .forkidspars{
+
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+
+  }
+  .forimg{
+    max-width: 40%;
+
+  }
+  .forkidspars img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  /* for kids end */
+  .socialmedia{
+    display: none;
+  }
+  .testflow img{
+    float: right;
+
+  }
+  .care-plans{
+    width: 100%;
+    text-align: left;
+    font-family: Lucinda Console;
+  }
+  .Florals-at-home{
+    padding: 30px;
+  }
+  #floralpars{
+    font-family: Lucinda Console;
+  }
+  .Workshop-and-parties{
+    padding: 30px;
+    text-align: center;
+  }
+.workdetail .workparagraph{
+  width: 100%;
+text-align: left;
+}
+.for-the-kids{
+  height: auto;
+}
+.for-the-kids .forkidparagraph{
+  text-align: left;
+
+}
+  .testflow .styleimgs{
+    border-radius: 5px;
+      width: 50%;
+      padding: 0 0 0 15px;
+      height: auto;
+  }
+  .testflow .styleimgs1{
+    border-radius: 5px;
+      width: 30%;
+      height: auto;
+  }
+  .testflow .styleimgs2{
+    border-radius: 5px;
+      width: 50%;
+      padding: 0 15px 0 0;
+      height: auto;
+      float: left;
+  }
+
+
+}
